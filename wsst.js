@@ -105,7 +105,7 @@ test = function (webSocketUrl, scenarioName, countConnections, cli, callback) {
                 countOpened++;
 
                 // Add default checkpoint when connection opens
-                api.checkpoint('Connection opened');
+                api.checkpoint('Connection ' + index + ' opened');
 
                 // And run scenario on this connection
                 scenario.init(connections[index].socket, api);
